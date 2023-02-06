@@ -7,7 +7,7 @@ function pigLatinWord(word) {
     let letter = word[i];
 
     if (vowels.includes(letter)) {
-        let firstPart = word.slice(i);
+        let firstPart = word.slice(i); // slice i trash = tr < ash
         let secondPart = word.slice(0, i);
         return firstPart + secondPart + "ay"; // returns "ash + tr + ay"
     }
